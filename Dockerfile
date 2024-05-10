@@ -1,5 +1,5 @@
-# Use the OpenJDK 21 as the base image
-FROM openjdk:21-jdk-alpine
+# Use the OpenJDK 17 as the base image
+FROM openjdk:17-jdk-alpine
 
 # Create a volume for the /tmp directory
 VOLUME /tmp
