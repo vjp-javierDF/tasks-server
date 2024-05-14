@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOriginPatterns("https://tasks-system.netlify.app/*")
+                        .allowedOrigins("https://tasks-system.netlify.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE");
             }
         };
