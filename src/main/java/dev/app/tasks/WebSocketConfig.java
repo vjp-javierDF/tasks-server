@@ -19,7 +19,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         // Añade la configuración de CORS a tu punto final WebSocket
-        registry.addEndpoint("/websocket-app").setAllowedOrigins("https://tasks-system.netlify.app").withSockJS();
+        registry.addEndpoint("/websocket-app").setAllowedOrigins("https://tasks-system.netlify.app/*").withSockJS();
     }
 
 }
